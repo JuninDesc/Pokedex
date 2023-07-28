@@ -83,3 +83,51 @@ body {
     font-size: 1rem;
     
 }
+
+.footer{
+    background-color: white;
+    color: black;
+}
+
+@media screen and (max-width: 768px) {
+    .pokedex1 {
+      max-width: 100%;
+    }
+    
+    .pokemon_img {
+      width: 50%;
+      bottom: 35%;
+      transform: translate(-50%, 0);
+    }
+    
+    .pokemon_data {
+      top: 71%;
+      left: 40%;
+      font-weight: 600;
+      font-size: clamp(5px, 3.5vw, 25px);
+    }
+    
+    .form {
+      width: 80%;
+      top: 66%;
+      left: 10%;
+    }
+    
+    .input_seach {
+      width: 100%;
+      font-size: clamp(8px, 3.5vw, 25rem);
+    }
+    
+    .button {
+      width: 20%;
+      font-size: clamp(8px, 3.5vw, 25rem);
+    }
+    
+    .buttons {
+      bottom: 23%;
+      left: 31%;
+      width: 80%;
+      gap: 2rem;
+    }
+  }
+
