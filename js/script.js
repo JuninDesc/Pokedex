@@ -9,6 +9,21 @@ const botaoNext = document.querySelector('.proximo');
 
 let procuraPokemon = 1;
 
+const imagens = [
+    "pokedex/pokedex1.jpg",
+    "pokedex/pokedex2.jpg",
+    "pokedex/pokedex3.jpg",
+    "pokedex/pokedex4.jpg",
+]
+
+let index = 0;
+
+function alterarImagem() {
+    const imagem = document.getElementById("imagem");
+    index = (index + 1) % imagens.length;
+    imagem.src = imagens[index];
+}
+
 const fetchPokemon = async (pokemon) => {
     const APIResponde = await fetch (`https://pokeapi.co/api/v2/pokemon/${pokemon}`);
     if(APIResponde.status === 200) {
