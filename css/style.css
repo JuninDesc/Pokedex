@@ -89,7 +89,7 @@ body {
     color: black;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 844px) {
     .pokedex1 {
       max-width: 100%;
     }
@@ -97,6 +97,7 @@ body {
     .pokemon_img {
       width: 50%;
       bottom: 35%;
+      max-width: 50%;
       transform: translate(-50%, 0);
     }
     
