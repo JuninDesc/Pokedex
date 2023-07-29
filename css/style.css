@@ -23,7 +23,7 @@ body {
 }
 .pokemon_img {
     position: absolute;
-    width:7%;
+    width: 12rem;
     bottom: 40%;
     left: 50%;
     transform: translate(-63%, 0);
@@ -89,29 +89,28 @@ body {
     color: black;
 }
 
-@media screen and (max-width: 844px) {
+@media screen and (max-width: 700px) {
     .pokedex1 {
       max-width: 100%;
     }
     
     .pokemon_img {
-      width: 50%;
-      bottom: 35%;
-      max-width: 50%;
-      transform: translate(-50%, 0);
+      width: 9rem;
+      bottom: 40%;
     }
     
     .pokemon_data {
-      top: 71%;
-      left: 40%;
+      display: flex;
+      position: absolute;
+      top: 86%;
+      left: 30%;
       font-weight: 600;
-      font-size: clamp(5px, 3.5vw, 25px);
     }
     
     .form {
-      width: 80%;
-      top: 66%;
-      left: 10%;
+      width: 90%;
+      top: 81%;
+      left: 5%;
     }
     
     .input_seach {
@@ -125,10 +124,13 @@ body {
     }
     
     .buttons {
-      bottom: 23%;
+      bottom: 2rem;
       left: 31%;
       width: 80%;
       gap: 2rem;
     }
   }
+
+
+
 
